@@ -12,7 +12,7 @@ function Chatbox() {
         {msgs.map((m, i) => (
           <div key={i} style={{ alignSelf: "flex-end", background: "var(--surface-subtle)", borderRadius: 12, padding: "10px 16px", fontFamily: psans, fontSize: 15 }}>{m}</div>
         ))}
-        {msgs.length > 0 && <div style={{ alignSelf: "flex-start", fontFamily: psans, fontSize: 15, color: "var(--text-secondary)" }}>Apertus is thinking…</div>}
+        {msgs.length > 0 && <div style={{ alignSelf: "flex-start", fontFamily: psans, fontSize: 15 }}>Apertus is thinking…</div>}
         <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
           <input value={v} onChange={(e) => setV(e.target.value)} onKeyDown={(e) => e.key === "Enter" && send()} placeholder="Ask Apertus anything"
             style={{ flex: 1, border: "1px solid var(--border-hairline)", borderRadius: 1000, padding: "14px 22px", fontFamily: psans, fontSize: 15, outline: "none", background: "var(--surface-page)", color: "var(--text-primary)" }} />
@@ -30,7 +30,7 @@ function FeatureCard({ title, sub, img, imgH, style }) {
     <div style={{ overflow: "hidden", borderRadius: 16, backgroundColor: "var(--surface-subtle)", display: "flex", flexDirection: "column", ...style }}>
       <div style={{ padding: 32, display: "flex", flexDirection: "column", gap: 8 }}>
         <span style={{ fontFamily: inter, fontWeight: 600, fontSize: 24, lineHeight: 1.2, letterSpacing: "-0.02em" }}>{title}</span>
-        <span style={{ fontFamily: inter, fontWeight: 500, fontSize: 18, lineHeight: 1.45, letterSpacing: "-0.005em", color: "var(--text-secondary)" }}>{sub}</span>
+        <span style={{ fontFamily: inter, fontWeight: 500, fontSize: 18, lineHeight: 1.45, letterSpacing: "-0.005em" }}>{sub}</span>
       </div>
       <div style={{ height: imgH, background: `url(${img}) center / cover no-repeat`, flexGrow: 1 }}></div>
     </div>
@@ -41,7 +41,7 @@ function FeatureRow({ title, sub, cta, img, flip }) {
     <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 48, justifyContent: "center" }}>
       <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
         <span style={{ fontFamily: inter, fontWeight: 700, fontSize: 36, lineHeight: 1.2, letterSpacing: "-0.02em" }}>{title}</span>
-        <span style={{ fontFamily: inter, fontWeight: 500, fontSize: 18, lineHeight: 1.45, letterSpacing: "-0.005em", color: "var(--text-secondary)" }}>{sub}</span>
+        <span style={{ fontFamily: inter, fontWeight: 500, fontSize: 18, lineHeight: 1.45, letterSpacing: "-0.005em" }}>{sub}</span>
       </div>
       <button style={{ border: "none", cursor: "pointer", width: "fit-content", borderRadius: 12, backgroundColor: "#000", padding: "12px 16px", fontFamily: inter, fontWeight: 500, fontSize: 18, lineHeight: 1.45, letterSpacing: "-0.005em", color: "#fff" }}>{cta}</button>
     </div>
@@ -71,21 +71,21 @@ function HomePage({ bg = "#fff" }) {
         <FeatureRow flip title="Contributing" sub="When there’s one great thing, there’s usually another. What’s your second thing to showcase?" cta="Another button" img="../../assets/images/feature-contributing.png" />
       </div>
       <div style={{ alignSelf: "stretch", padding: "50px 0", display: "flex", flexDirection: "column", gap: 30, alignItems: "center" }}>
-        <span style={{ fontFamily: psans, fontSize: 15, lineHeight: 1.4, letterSpacing: "-0.005em", color: "var(--text-secondary)" }}>Our inference partners</span>
+        <span style={{ fontFamily: psans, fontSize: 15, lineHeight: 1.4, letterSpacing: "-0.005em" }}>Our inference partners</span>
         <div style={{ display: "flex", gap: 40, justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}>
           {[0, 1, 2, 3, 4, 5].map((n) => <img key={n} src={`../../assets/images/partner-logo-${n}.png`} alt="partner" style={{ height: 32, objectFit: "contain" }} />)}
         </div>
       </div>
       <div style={{ alignSelf: "stretch", border: "1px solid var(--border-hairline)", padding: "120px 300px", display: "flex", flexDirection: "column", gap: 40, alignItems: "center" }}>
         <span style={{ fontFamily: psans, fontWeight: 300, fontSize: 60, lineHeight: 0.9, letterSpacing: "-0.03em", textAlign: "center" }}>By the people, for the people</span>
-        <span style={{ fontFamily: psans, fontSize: 15, lineHeight: 1.4, color: "var(--text-secondary)", textAlign: "center" }}>AI as public infrastructure, built in the open</span>
+        <span style={{ fontFamily: psans, fontSize: 15, lineHeight: 1.4, textAlign: "center" }}>AI as public infrastructure, built in the open</span>
         <ButtonLinkout href="https://chat.publicai.co">Try it</ButtonLinkout>
       </div>
       <div style={{ alignSelf: "stretch", borderTop: "1px solid var(--border-hairline)", padding: "40px 0", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", gap: 32 }}>
           {["TERMS & CONDITIONS", "CONTACT US"].map((t) => <span key={t} style={{ fontFamily: psans, fontWeight: 600, fontSize: 14, textTransform: "uppercase" }}>{t}</span>)}
         </div>
-        <div style={{ display: "flex", gap: 16, fontFamily: psans, fontSize: 15, color: "var(--text-secondary)" }}>
+        <div style={{ display: "flex", gap: 16, fontFamily: psans, fontSize: 15 }}>
           <span>© Public AI Inference Utility</span><span>All Rights Reserved</span>
         </div>
       </div>

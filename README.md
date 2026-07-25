@@ -23,8 +23,11 @@ For any other agent or IDE assistant, just point it at [`design.md`](design.md) 
 
 - **Never redraw the logo.** Use the shipped SVGs in `assets/`, or extend from `brand-editable/` if you need a new lockup.
 - **Brand red (`#EF3C24`) is loud and rare** — at most one accent element per view region. Everything else is near-monochrome black/white.
+- **All text is black or a spot color** — never gray. Gray is for UI chrome (hover fills, surfaces), not readable copy.
 - The full rationale for every rule above lives in [`design.md`](design.md) — read it before making judgment calls the tokens/components don't cover.
 
 ## Font licensing
 
 **NB International Pro CG's font files are not included in this repo.** Public AI's license from Neubau is a domain-locked, self-hosted webfont license that explicitly prohibits redistributing the font files or making them available for download — publishing them here would violate that license. `tokens/fonts.css` still declares the `@font-face` rules and `--font-brand` falls back to Overpass Bold, so everything renders correctly without them; if you have your own licensed copy of the font, drop it into `assets/fonts/` locally (gitignored) to see brand text in the real typeface. Public Sans, Inter, Overpass, Overpass Mono, and Roboto Flex are open (Google Fonts) and load from there as normal.
+
+**Webfonts ≠ desktop fonts.** Neubau's webfont kit (`*-webfont.ttf` / `.woff2`) is built for `@font-face` in a browser, not for installing in Font Book or PowerPoint. Those files ship with a stripped `name` table (empty family names, invalid PostScript names) — macOS will reject them with `'name' table usability` / `'name' table structure` errors. That's expected. For local desktop apps (PowerPoint, Keynote, Figma), use the **desktop OTF/TTF** from your Neubau license instead. The webfont files only need to live in `assets/fonts/` for CSS previews in a browser.

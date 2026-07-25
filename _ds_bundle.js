@@ -419,7 +419,7 @@ function Chatbox() {
       alignSelf: "flex-start",
       fontFamily: psans,
       fontSize: 15,
-      color: "var(--text-secondary)"
+      color: "var(--text-primary)"
     }
   }, "Apertus is thinking\u2026"), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -496,7 +496,7 @@ function FeatureCard({
       fontSize: 18,
       lineHeight: 1.45,
       letterSpacing: "-0.005em",
-      color: "var(--text-secondary)"
+      color: "var(--text-primary)"
     }
   }, sub)), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -542,7 +542,7 @@ function FeatureRow({
       fontSize: 18,
       lineHeight: 1.45,
       letterSpacing: "-0.005em",
-      color: "var(--text-secondary)"
+      color: "var(--text-primary)"
     }
   }, sub)), /*#__PURE__*/React.createElement("button", {
     style: {
@@ -680,7 +680,7 @@ function HomePage({
       fontSize: 15,
       lineHeight: 1.4,
       letterSpacing: "-0.005em",
-      color: "var(--text-secondary)"
+      color: "var(--text-primary)"
     }
   }, "Our inference partners"), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -722,7 +722,7 @@ function HomePage({
       fontFamily: psans,
       fontSize: 15,
       lineHeight: 1.4,
-      color: "var(--text-secondary)",
+      color: "var(--text-primary)",
       textAlign: "center"
     }
   }, "AI as public infrastructure, built in the open"), /*#__PURE__*/React.createElement(ButtonLinkout, {
@@ -755,7 +755,7 @@ function HomePage({
       gap: 16,
       fontFamily: psans,
       fontSize: 15,
-      color: "var(--text-secondary)"
+      color: "var(--text-primary)"
     }
   }, /*#__PURE__*/React.createElement("span", null, "\xA9 Public AI Inference Utility"), /*#__PURE__*/React.createElement("span", null, "All Rights Reserved"))));
 }

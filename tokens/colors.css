@@ -6,7 +6,7 @@
 --pai-white:#FFFFFF;
 --pai-gray-100:#F7F7F7; /* hairline borders, subtle surfaces */
 --pai-gray-400:#929292; /* black-button hover */
---pai-gray-500:#6F6F6F; /* secondary text */
+--pai-gray-500:#6F6F6F; /* UI chrome only — not for text */
 --pai-gray-800:#444444;
 --pai-oak:#a97954; /* editorial accent text */
 --pai-leather:#c29b87;
@@ -15,7 +15,6 @@
 --color-brand:var(--pai-red);
 --color-brand-hover:var(--pai-red-hover);
 --text-primary:var(--pai-black);
---text-secondary:var(--pai-gray-500);
 --text-inverse:var(--pai-white);
 --text-accent:var(--pai-oak);
 --surface-page:var(--pai-white);
