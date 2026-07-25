@@ -10,7 +10,7 @@ For any other agent or IDE assistant, just point it at [`design.md`](design.md) 
 
 ## What's here
 
-- [Figma: Public AI Design System](https://www.figma.com/design/Tr51dyCX0N8aeqZIUjJ0Ct/Public-AI-Design-System) — the source-of-truth components, styles, and page frames this repo was built from
+- [Figma: Public AI Design System](https://www.figma.com/design/Tr51dyCX0N8aeqZIUjJ0Ct/Public-AI-Design-System) — the bleeding edge of experiments and design tests. However, please treat this repo as the stable source of truth for the accepted Public AI Design System.
 - [`design.md`](design.md) — the complete brand spec: content voice, color, type, layout, and iconography rules
 - [`tokens/`](tokens/) + [`styles.css`](styles.css) — CSS custom properties for color, type, shape, and fonts
 - [`components/`](components/) — React components (brand, buttons, arrows, navigation), each with a `.jsx`, a `.d.ts`, and a `.prompt.md` explaining how/when to use it
